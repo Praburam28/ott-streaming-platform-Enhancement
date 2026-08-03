@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>My Profile</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/profile.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<h2>My Profile</h2>
+
+<a href="dashboard.html"
+class="primary-btn">
+
+Dashboard
+
+</a>
+
+</header>
+
+<div class="profile-container">
+
+<div class="profile-card">
+
+<img
+src="assets/avatars/default.png"
+class="avatar">
+
+<h2 id="fullName">
+
+Loading...
+
+</h2>
+
+<p id="email"></p>
+
+<span
+class="badge"
+id="role">
+
+User
+
+</span>
+
+</div>
+
+<div class="details-card">
+
+<h3>Subscription</h3>
+
+<p id="subscription">
+
+Loading...
+
+</p>
+
+<h3>API Key</h3>
+
+<textarea
+id="apiKey"
+readonly>
+
+Loading...
+
+</textarea>
+
+</div>
+
+</div>
+
+<section>
+
+<h2 class="section-title">
+
+Watch History
+
+</h2>
+
+<div
+id="historyContainer"
+class="content-grid">
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+
+Favorites
+
+</h2>
+
+<div
+id="favoriteContainer"
+class="content-grid">
+
+</div>
+
+</section>
+
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/profile.js"></script>
+
+</body>
+
+</html>

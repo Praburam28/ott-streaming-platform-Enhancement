@@ -1,0 +1,431 @@
+body{
+
+    margin:0;
+
+    font-family:Poppins,sans-serif;
+
+    background:#111;
+
+    color:white;
+
+}
+
+.topbar{
+
+    height:70px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 50px;
+
+    background:#0a0a0a;
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    color:#E50914;
+
+    font-weight:700;
+
+}
+
+.hero{
+
+    text-align:center;
+
+    padding:70px 20px;
+
+}
+
+.hero h1{
+
+    font-size:50px;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    color:#bdbdbd;
+
+    font-size:18px;
+
+}
+
+.plans-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:40px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:50px;
+
+}
+
+.plan-card{
+
+    background:#1c1c1c;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+.plan-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.5);
+
+}
+
+.plan-header{
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+.plan-header h2{
+
+    margin:0;
+
+    font-size:30px;
+
+}
+
+.price{
+
+    font-size:48px;
+
+    color:#E50914;
+
+    margin-top:15px;
+
+    font-weight:700;
+
+}
+
+.days{
+
+    color:#bbb;
+
+}
+
+.features{
+
+    padding:25px 35px;
+
+}
+
+.features li{
+
+    list-style:none;
+
+    padding:12px 0;
+
+    border-bottom:1px solid #333;
+
+}
+
+.features li:last-child{
+
+    border:none;
+
+}
+
+.subscribe-btn{
+
+    margin:25px;
+
+    width:calc(100% - 50px);
+
+    padding:15px;
+
+    background:#E50914;
+
+    border:none;
+
+    color:white;
+
+    font-size:18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.subscribe-btn:hover{
+
+    background:#ff2b2b;
+
+}
+
+.popular{
+
+    position:absolute;
+
+    top:15px;
+
+    right:-40px;
+
+    background:#FFD700;
+
+    color:black;
+
+    padding:8px 45px;
+
+    transform:rotate(45deg);
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   Current Subscription
+========================================== */
+
+.current-subscription{
+
+    max-width:1200px;
+
+    margin:40px auto;
+
+    padding:0 50px;
+
+}
+
+.current-subscription h2{
+
+    margin-bottom:20px;
+
+    font-size:30px;
+
+}
+
+.current-plan{
+
+    background:#1c1c1c;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+.current-plan h3{
+
+    margin-top:0;
+
+    color:#E50914;
+
+}
+
+.current-plan p{
+
+    margin:12px 0;
+
+    color:#d0d0d0;
+
+}
+
+/* ==========================================
+   Cancel Button
+========================================== */
+
+.cancel-btn{
+
+    margin-top:20px;
+
+    background:#d32f2f;
+
+    color:#fff;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.cancel-btn:hover{
+
+    background:#b71c1c;
+
+}
+
+/* ==========================================
+   Modal
+========================================== */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.7);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.modal-content{
+
+    width:420px;
+
+    background:#ffffff;
+
+    color:#222;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+.modal-content h2{
+
+    margin-top:0;
+
+    color:#E50914;
+
+}
+
+.modal-content p{
+
+    margin:20px 0;
+
+}
+
+.modal-buttons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+}
+
+.danger-btn{
+
+    flex:1;
+
+    padding:12px;
+
+    background:#E50914;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+.danger-btn:hover{
+
+    background:#c40812;
+
+}
+
+.secondary-btn{
+
+    flex:1;
+
+    padding:12px;
+
+    background:#555;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+.secondary-btn:hover{
+
+    background:#444;
+
+}
+
+#prorationContent{
+
+    text-align:left;
+
+    margin:20px 0;
+
+}
+
+#prorationContent p{
+
+    margin:12px 0;
+
+    font-size:16px;
+
+}
+
+#paymentFailureModal .modal-content{
+
+    max-width:420px;
+
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Subscription Plans</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/subscription.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">
+        OTT STREAM
+    </div>
+
+    <a href="dashboard.html" class="primary-btn">
+        ← Dashboard
+    </a>
+
+</header>
+
+<section class="hero">
+
+    <h1>Choose Your Perfect Plan</h1>
+
+    <p>
+        Watch unlimited Movies, Series and Music anywhere,
+        anytime.
+    </p>
+
+</section>
+
+<!-- Current Subscription -->
+<section class="current-subscription">
+
+    <h2>Your Current Subscription</h2>
+
+    <div id="currentSubscriptionCard">
+
+        <p>Loading...</p>
+
+    </div>
+
+</section>
+
+<!-- Available Plans -->
+<div
+    class="plans-container"
+    id="plansContainer">
+
+</div>
+
+<!-- Cancel Confirmation Modal -->
+<div
+    id="cancelModal"
+    class="modal">
+
+    <div class="modal-content">
+
+        <h2>Cancel Subscription</h2>
+
+        <p>
+            Are you sure you want to cancel your subscription?
+        </p>
+
+        <div class="modal-buttons">
+
+            <button
+                class="danger-btn"
+                onclick="confirmCancel()">
+
+                Yes, Cancel
+
+            </button>
+
+            <button
+                class="secondary-btn"
+                onclick="closeModal()">
+
+                No
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Proration Preview Modal -->
+
+<div
+    id="prorationModal"
+    class="modal">
+
+    <div class="modal-content">
+
+        <h2>Upgrade / Downgrade Preview</h2>
+
+        <div id="prorationContent">
+
+        </div>
+
+        <div class="modal-buttons">
+
+            <button
+                class="danger-btn"
+                onclick="confirmProration()">
+
+                Confirm
+
+            </button>
+
+            <button
+                class="secondary-btn"
+                onclick="closeProrationModal()">
+
+                Cancel
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/subscription.js"></script>
+
+</body>
+
+</html>
+
+<!-- Payment Failure Modal -->
+<div id="paymentFailureModal" class="modal">
+
+    <div class="modal-content">
+
+        <h2>Payment Failed</h2>
+
+        <p>
+            Your payment could not be processed.
+            Please try again.
+        </p>
+
+        <div class="modal-buttons">
+
+            <button
+                class="danger-btn"
+                onclick="retrySubscription()">
+
+                Retry
+
+            </button>
+
+            <button
+                class="secondary-btn"
+                onclick="closePaymentFailureModal()">
+
+                Cancel
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

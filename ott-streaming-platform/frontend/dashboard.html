@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OTT Streaming Platform</title>
+
+    <link rel="icon" href="assets/logos/logo.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="logo">
+            OTT STREAM
+        </div>
+
+        <div class="nav-center">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Movies, Series & Music">
+
+        </div>
+
+        <div class="nav-right">
+
+            <span id="welcomeUser"></span>
+
+            <a href="subscription.html">Subscription</a>
+
+            <a href="profile.html">Profile</a>
+
+            <a href="admin-upload.html">Admin</a>
+
+            <a href="reports.html">Reports</a>
+
+            <button
+                id="logoutBtn"
+                class="primary-btn">
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+
+        <div class="hero-overlay">
+
+            <div class="hero-content">
+
+                <h1>
+                    Unlimited Movies, Series & Music
+                </h1>
+
+                <p>
+                    Watch anywhere. Stream securely using JWT Authentication,
+                    API Keys and Subscription Plans.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+<!-- Usage Metrics -->
+
+<section class="usage-section">
+
+    <h2 class="section-title">
+
+        📊 Usage Metrics
+
+    </h2>
+
+    <div id="usageMetrics">
+
+        Loading usage...
+
+    </div>
+
+</section>
+
+    <!-- Loading -->
+    <div id="loading" class="loading">
+        Loading contents...
+    </div>
+
+    <main class="container">
+
+        <h2 class="section-title">
+            🎬 Movies
+        </h2>
+
+        <div
+            id="movieContainer"
+            class="content-grid">
+
+        </div>
+
+        <h2 class="section-title">
+            📺 Series
+        </h2>
+
+        <div
+            id="seriesContainer"
+            class="content-grid">
+
+        </div>
+
+        <h2 class="section-title">
+            🎵 Music
+        </h2>
+
+        <div
+            id="musicContainer"
+            class="content-grid">
+
+        </div>
+
+        <div
+            id="emptyMessage"
+            class="empty-message"
+            style="display:none;">
+
+            No content available.
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <p>
+            © 2026 OTT Streaming Platform | Built with FastAPI & Vanilla JavaScript
+        </p>
+
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Reports</title>
+
+    <link rel="stylesheet"
+          href="css/variables.css">
+
+    <link rel="stylesheet"
+          href="css/common.css">
+
+    <link rel="stylesheet"
+          href="css/reports.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">
+
+        OTT STREAM
+
+    </div>
+
+    <a href="dashboard.html"
+       class="primary-btn">
+
+        Dashboard
+
+    </a>
+
+</header>
+
+<div class="container">
+
+    <h1>
+
+        Reports Dashboard
+
+    </h1>
+
+    <div class="report-card">
+
+        <h2>
+
+            Monthly Revenue
+
+        </h2>
+
+        <div id="monthlyRevenue">
+
+            Loading...
+
+        </div>
+
+    </div>
+
+    <div class="report-card">
+
+        <h2>
+
+            Subscription Summary
+
+        </h2>
+
+        <div id="subscriptionSummary">
+
+            Loading...
+
+        </div>
+
+    </div>
+
+    <div class="report-card">
+
+        <h2>
+
+            Plan Distribution
+
+        </h2>
+
+        <div id="planDistribution">
+
+            Loading...
+
+        </div>
+
+    </div>
+
+    <div class="download-buttons">
+
+        <button
+            onclick="downloadCSV()">
+
+            Download CSV
+
+        </button>
+
+        <button
+            onclick="downloadPDF()">
+
+            Download PDF
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/reports.js"></script>
+
+</body>
+
+</html>

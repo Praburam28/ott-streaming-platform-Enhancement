@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Video Player</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/player.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <a href="dashboard.html"
+       class="primary-btn">
+
+        ← Dashboard
+
+    </a>
+
+    <h2 id="videoTitle">
+
+        Loading...
+
+    </h2>
+
+</header>
+
+<div class="player-container">
+
+    <video
+        id="videoPlayer"
+        controls
+        controlsList="nodownload"
+        preload="metadata">
+
+    </video>
+
+</div>
+
+<div class="video-info">
+
+    <h2 id="title"></h2>
+
+    <p id="description"></p>
+
+    <div class="meta">
+
+        <span id="category"></span>
+
+        <span id="duration"></span>
+
+    </div>
+
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/player.js"></script>
+
+</body>
+
+</html>
